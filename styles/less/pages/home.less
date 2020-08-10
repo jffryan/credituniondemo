@@ -1,0 +1,165 @@
+.home__hero {
+  background-image: url(../../../assets/pig.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.home__hero > .container {
+  display: flex;
+  align-items: center;
+  transform: translateY(100%);
+}
+
+.home__hero .title {
+  width: 58%;
+}
+
+.home__main-content {
+  background-color: #2a2333;
+  color: #fff;
+  text-align: left;
+  position: relative;
+}
+
+.home__main-content img {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.home__main-content .img-overlay {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.75)
+  );
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+}
+
+.home__main-content .content {
+  padding: 9rem 5rem 9rem 0;
+  z-index: 1;
+  position: relative;
+  width: 80%;
+}
+
+.content h2 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+.content h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.content p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.home__data-content {
+  padding: 9rem 0;
+  background-color: @off-black;
+  color: #fff;
+}
+
+.home__data-content .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__data-content .data-container {
+  width: 50%;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.home__data-content .data-container p {
+  margin-bottom: 1rem;
+}
+
+.home__data-content .content {
+  width: 50%;
+}
+
+.home__data-content .content-body {
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.content-body + .content-body {
+  margin-top: 2rem;
+}
+
+.call-to-action {
+  background-color: #2a2333;
+  min-height: 50vh;
+  padding: 9rem 0;
+  color: #fff;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+
+.cards-container .card {
+  padding: 2rem;
+  border: 3px solid #fff;
+  border-radius: 1rem;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+}
+
+.cards-container .card:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.55);
+  background: #fff;
+  color: @off-black;
+  transform: translateY(-0.5rem);
+}
+
+.cards-container .card:hover a {
+  color: @off-black;
+}
+
+.cards-container .card .card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.cards-container .card:hover .card-icon {
+  color: @darkest-color;
+}
+
+.cards-container .card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cards-container .card p {
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.cards-container .card a {
+  color: #fff;
+  transition: color 0.4s ease-in-out;
+}
+
+.cards-container .card a:hover,
+.cards-container .card a:focus {
+  color: @secondary-color;
+}

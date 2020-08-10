@@ -1,0 +1,27 @@
+.btn-container {
+  margin: 2rem 0;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.btn.btn-primary {
+  background-color: @primary-color;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn.btn-primary:hover {
+  background-color: @secondary-color;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.55);
+  transform: scale(1.03);
+  letter-spacing: 0.4;
+}
